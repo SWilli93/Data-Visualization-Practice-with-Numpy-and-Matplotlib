@@ -21,3 +21,8 @@ plt.hist(sunflowers_normal,
        label='normal', normed=True)
 plt.legend()
 plt.show()
+
+# Calculate probabilities here:
+experiments = np.random.binomial(200, .1, size=5000)
+prob = np.mean(experiments < 20)
+print(prob)
